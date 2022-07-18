@@ -35,6 +35,7 @@ const printData = (arr)=>{
                  <p class="card-text"> Patronus: ${patronus} </p>
                  <p class="card-text"> Ascendencia: ${ancestry} </p>
              </div>
+           
         </div>
         `
     }
