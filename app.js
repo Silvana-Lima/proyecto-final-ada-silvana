@@ -114,7 +114,6 @@ const hufflepuffData = (arr)=>{
         `
     }
     }
-
     tarjetashuf.innerHTML = str;
 }
 
