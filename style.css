@@ -7,8 +7,9 @@
 }
 
 body{
-    background-color: black;
+    
     font-family: 'Cormorant SC', serif;
+    background-color: black;
 }
 
 /****####---- HEADER ----####****/
@@ -16,16 +17,20 @@ body{
 header{
     display: flex;
     align-items: center;
+    background-image: url(./assets/harry-potter-1.jpg);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-color: black;
    
 }
 
-.logo{
+/* .logo{
     width: 30%;
-}
+} */
 
-.banner{
+/* .banner{
     width: 100%;
-}
+} */
 
 .title{
     font-weight: bold;
@@ -35,6 +40,7 @@ header{
 .cont-title{
     width: 100%;
     text-align: center;
+    padding: 20px 0;
 }
 
 .sub-title{
@@ -86,8 +92,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-  color: gray;
-  
+  color:white;
+  font-weight: bold;
+  text-shadow: -3px 2px 6px rgba(0,0,0,1);
   
 } 
 
@@ -104,7 +111,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:rgb(103, 82, 43);
+    background: black;
     padding: 50px 0;
 
    
@@ -113,7 +120,7 @@ h4{
 .parrafoprologo{
       font-size: 20px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: black;
+      color: goldenrod;
       width: 60%; 
       padding-right: 20px;
       
@@ -130,9 +137,35 @@ h1 {
 
 
 #gryffindor, #slytherin, #hufflepuff, #ravenclaw{
-    padding-top: 20px;
+    padding: 50px 0
 }
 
+#gryffindor{
+    background: linear-gradient(black,#740001,black);
+}
+
+#slytherin{
+    background: linear-gradient(black,rgb(3, 54, 3),black);
+}
+
+#hufflepuff{
+    background: linear-gradient(black,rgb(92, 78, 1),black);
+
+}
+
+#ravenclaw{
+    background: linear-gradient(black,rgb(3, 28, 67),black);
+   
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+   
+  } 
+
+  
 .parrafo{
     font-size: 25px;
     color: gray;
@@ -147,6 +180,10 @@ h1 {
     background-color: rgb(48, 50, 48);
     text-align: center;
     color:white;
+}
+
+.mi-card:hover{
+    border:2px solid gold;
 }
 
 
@@ -177,9 +214,10 @@ h1 {
 /****####----ASIDE----####****/
 
 aside{
-    background-color:rgb(103, 82, 43);
+    background-image: url(./assets/harry-potter-hogwarts.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     height: 100vh;
-    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,8 +228,8 @@ aside{
 
 
 .cont-test{
-    width: 60%;
-    background-color:rgb(240, 165, 0);
+    width: 45%;
+    background-color:black;
     border: 2px solid black;
     display: flex;
     flex-direction: column; 
@@ -202,6 +240,7 @@ aside{
 
 .title-test{
     font-weight: bold;
+    color: #D3A625;
 }
 
 
@@ -216,9 +255,22 @@ aside{
     color: white;
 }
 
+.p-test{
+    color: white;
+}
+
+.ir-test{
+  font-size: 50px;
+}
+.volver{
+    margin-top: 50px;
+}
+
+
 /****####----FOOTER----####****/
 
 footer{
+    background: black;
     padding: 20px 0;
     text-align: center;
     font-size: 20px;
@@ -227,21 +279,10 @@ footer{
    
 }
 
-.boton{
-    background-color:gray;
-    margin: 30px;
-}
 
 
 
 
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 30px;
- 
-} 
 
 
 
@@ -255,6 +296,8 @@ footer{
 
     header{
         flex-direction: column;
+        background-size: 100%;
+        
 
     }
     .logo{
@@ -263,9 +306,13 @@ footer{
 
     .title{
         font-size: 40px;
+        /* box-shadow: 5px 5px 18px 21px rgba(0,0,0,0.77); */
+        text-shadow: -3px 2px 6px rgba(0,0,0,1);
     }
     .sub-title{
+        color: goldenrod;
         font-size: 20px;
+        text-shadow: -3px 2px 6px rgba(0,0,0,1);
     }
     .cont-title{
         margin-bottom: 20px;
@@ -273,6 +320,11 @@ footer{
 
     nav ul{
         font-size: 18px;
+    }
+
+    nav ul li a{
+        color: black;
+        font-weight: bold;
     }
 
     .prologocontainer{
@@ -294,6 +346,11 @@ footer{
         width: 100%;
     }
 
+    .cont-test{
+        width: 100%;
+    }
+    
+
 
 }
 
@@ -311,15 +368,17 @@ nav ul{
     width: 200px;
 }
 
+
 footer{
     font-size: 12px;
+    padding: 0 0 10px 0;
+    
 }
 
-.cont-test{
-    width: 100%;
+
+.volver{
+    margin-top: 10px;
 }
-
-
 
 
 }
