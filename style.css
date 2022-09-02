@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
 
 *{
-   margin: 0;
-   padding: 0;
+   margin: 0px;
+   padding: 0px;
    box-sizing: border-box;
 }
 
@@ -15,39 +15,38 @@ body{
 /****####---- HEADER ----####****/
 
 header{
-    display: flex;
-    align-items: center;
-    background-image: url(./assets/harry-potter-1.jpg);
-    background-size: 25%;
-    background-repeat: no-repeat;
-    background-color: black;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    
    
 }
 
-/* .logo{
+.logo{
     width: 30%;
-} */
 
-/* .banner{
+} 
+
+.banner{
     width: 100%;
-} */
+  
+}
 
 .title{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .cont-title{
-    width: 100%;
+    width: 60%;
     text-align: center;
-    padding: 20px 0;
 }
 
 .sub-title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:gray;
     font-variant: small-caps;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 h3{
@@ -296,23 +295,17 @@ footer{
 
     header{
         flex-direction: column;
-        background-size: 100%;
-        
-
-    }
+}
     .logo{
     width: 100%;
     }
 
     .title{
         font-size: 40px;
-        /* box-shadow: 5px 5px 18px 21px rgba(0,0,0,0.77); */
-        text-shadow: -3px 2px 6px rgba(0,0,0,1);
     }
     .sub-title{
-        color: goldenrod;
-        font-size: 20px;
-        text-shadow: -3px 2px 6px rgba(0,0,0,1);
+        color:gray;
+
     }
     .cont-title{
         margin-bottom: 20px;
