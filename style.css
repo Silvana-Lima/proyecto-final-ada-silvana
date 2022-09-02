@@ -15,53 +15,73 @@ body{
 
 header{
     display: flex;
-    justify-content: center;
-    background-color: black;
+    align-items: center;
    
+}
+
+.logo{
+    width: 30%;
 }
 
 .banner{
     width: 100%;
 }
 
+.title{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.cont-title{
+    width: 100%;
+    text-align: center;
+}
+
+.sub-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:gray;
+    font-variant: small-caps;
+    font-size: 25px;
+}
+
 h3{
     font-size: 30px;
+    
 }
 
 /****####---- NAV ----####****/
+.cont-nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 nav{
-    font-size: 25px;
-    background-color:black;
-    display: flex;
+    font-size: 30px;
+    padding: 10px 0;
+    background-color:#740001;
+    display: flex; 
     justify-content: center;
     align-items: center;
     color: white;
-    border: 1px solid gray;
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 1; 
   
 }
 
 nav ul{
-    overflow: hidden;
-    list-style: none;
-}
-
-nav ul li{
-    
-    float: left;
-
-
+    list-style: none; 
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 nav ul li a{
     padding: 0px 10px;
     text-decoration: none;
-    display: block;
-    color: goldenrod;
-    align-items: center;
+    color: #D3A625;
 
 }
 
@@ -71,6 +91,11 @@ nav ul li a:hover{
   
 } 
 
+h4{
+    font-size: 25px;
+    color: white;
+}
+
 
 /****####---- MAIN ----####****/
 
@@ -79,8 +104,9 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(79, 79, 79);
-    padding: 20px 0;
+    background-color:rgb(103, 82, 43);
+    padding: 50px 0;
+
    
 }
   
@@ -93,17 +119,18 @@ nav ul li a:hover{
       
 }
 
-#gryffindor, #slytherin, #hufflepuff, #ravenclaw{
-    padding-top: 20px;
+h1 {
+    text-align: center;
+    color: goldenrod;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   
 }
 
 
 
-.mi-card{
-    margin: 15px;
-    background-color: rgb(48, 50, 48);
-    text-align: center;
-    color:white;
+#gryffindor, #slytherin, #hufflepuff, #ravenclaw{
+    padding-top: 20px;
 }
 
 .parrafo{
@@ -113,6 +140,15 @@ nav ul li a:hover{
     padding-left: 20px ;
    
 }
+
+
+.mi-card{
+    margin: 15px;
+    background-color: rgb(48, 50, 48);
+    text-align: center;
+    color:white;
+}
+
 
 #tarjetas{
     display: flex;
@@ -138,39 +174,55 @@ nav ul li a:hover{
     justify-content: center;
 }
 
+/****####----ASIDE----####****/
 
-.test{
-    margin: 30px;
-    color: goldenrod;
+aside{
+    background-color:rgb(103, 82, 43);
+    height: 100vh;
+    margin-top: 100px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 25px;
     
-    
 }
+
+
+.cont-test{
+    width: 60%;
+    background-color:rgb(240, 165, 0);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.title-test{
+    font-weight: bold;
+}
+
 
 .test a{
     text-decoration: none;
-    color: gray;
-    font-size: 25px;
+    color: rgb(114, 3, 3);
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .test a:hover{
     color: white;
 }
 
-
 /****####----FOOTER----####****/
 
 footer{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
     font-size: 20px;
     color:white;
-    border: 1px solid gray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
 }
@@ -180,13 +232,6 @@ footer{
     margin: 30px;
 }
 
-h1 {
-    text-align: center;
-    color: goldenrod;
-    margin-top: 30px;
-    margin-bottom: 20px;
-   
-}
 
 
 
@@ -208,16 +253,34 @@ h1 {
 
 @media(max-width: 960px){
 
-   h4{
-        display: none;
+    header{
+        flex-direction: column;
+
+    }
+    .logo{
+    width: 100%;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+    .sub-title{
+        font-size: 20px;
+    }
+    .cont-title{
+        margin-bottom: 20px;
+    }
+
+    nav ul{
+        font-size: 18px;
     }
 
     .prologocontainer{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         margin: 0;
-        padding: 10px;
+        padding: 30px;
     }
 
     .parrafoprologo{
@@ -230,6 +293,8 @@ h1 {
         text-align: center;
         width: 100%;
     }
+
+
 }
 
 /*####---- MOBILE ----####*/
@@ -237,16 +302,22 @@ h1 {
 @media(max-width: 480px){
 
 nav ul{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
 }
 
 .sombrero{
     width: 200px;
 }
 
+footer{
+    font-size: 12px;
+}
 
+.cont-test{
+    width: 100%;
+}
 
 
 
